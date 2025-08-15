@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro Caixa</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Livro Caixa</h1>
+            <span class="date-range" id="dateRange">01/08/2025 a 31/08/2025</span>
+        </div>
+        <div class="filters">
+            <input type="date" id="startDate" class="date-input">
+            <input type="date" id="endDate" class="date-input">
+            <select class="type-select"><option>Entrada</option><option>Devolução</option><option>Garantia</option></select>
+            <input type="text" placeholder="Pesquisar" class="search-input">
+            <button class="add-btn">Adicionar</button>
+            <input type="file" id="fileInput" accept=".pdf" style="display: non;">
+            <button class="export-btn">Exportar</button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Categoria</th>
+                    <th>Tipo</th>
+                    <th>Valor (R$)</th>
+                    <th>Saldo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+        <div class="summary">
+            <div class="summary-title">Resumo</div>
+            <div class="summary-row">
+                <span>Entradas</span>
+                <span class="summary-value"></span>
+            </div>
+            <div class="summary-row">
+                <span>Saídas</span>
+                <span class="summary-value"></span>
+            </div>
+            <div class="summary-row">
+                <span>Saldo Final</span>
+                <span class="summary-value"></span>
+            </div>
+        </div>
+        <div class="observations">
+            <label>Observações</label>
+            <textarea rows="4"></textarea>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
