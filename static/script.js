@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
         //Ação de clicar no botão
-    const botao = document.querySelector('add-btn')
+    const botao = document.querySelector('.add-btn')
     const fileinput = document.getElementById('fileInput')
 
     botao.addEventListener('click', () => fileinput.click());
