@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f7fa;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -10,10 +10,10 @@ body {
 .container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     padding: 25px;
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
 }
 
 .header {
@@ -21,19 +21,19 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #FFE600;
     padding-bottom: 15px;
 }
 
 .header h1 {
     margin: 0;
-    color: #1e3a8a;
-    font-size: 24px;
-    font-weight: 600;
+    color: #3483FA;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .header .date-range {
-    color: #64748b;
+    color: #6B7280;
     font-size: 14px;
 }
 
@@ -46,17 +46,18 @@ body {
 
 .date-input, .type-select, .search-input {
     padding: 8px 12px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #D1D5DB;
     border-radius: 6px;
     font-size: 14px;
-    background: #f9fafb;
+    background: #F9FAFB;
     color: #374151;
-    transition: border-color 0.3s;
+    transition: all 0.3s;
 }
 
 .date-input:focus, .type-select:focus, .search-input:focus {
-    border-color: #3b82f6;
+    border-color: #3483FA;
     outline: none;
+    box-shadow: 0 0 5px rgba(52, 131, 250, 0.3);
 }
 
 .add-btn, .export-btn {
@@ -64,28 +65,33 @@ body {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .add-btn {
-    background-color: #3b82f6;
-    color: white;
+    background-color: #FFE600;
+    color: #1B1B1B;
 }
 
 .export-btn {
-    background-color: #10b981;
+    background-color: #3483FA;
     color: white;
 }
 
-.add-btn:hover, .export-btn:hover {
-    opacity: 0.9;
+.add-btn:hover {
+    background-color: #FFD500;
+}
+
+.export-btn:hover {
+    background-color: #2A6EDB;
 }
 
 .table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 10px;
+    border-spacing: 0 8px;
     margin-bottom: 25px;
 }
 
@@ -93,31 +99,33 @@ body {
     padding: 12px 15px;
     text-align: left;
     color: #374151;
+    border-radius: 6px;
 }
 
 .table th {
-    background: #f9fafb;
-    font-weight: 500;
+    background: #F3F4F6;
+    font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 .table td {
-    background: #ffffff;
+    background: #FFFFFF;
     font-size: 14px;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05);
 }
 
 .summary {
-    background: #f9fafb;
+    background: #F3F4F6;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
+    border-left: 5px solid #FFE600;
 }
 
 .summary-title {
-    color: #1e3a8a;
-    font-weight: 600;
+    color: #3483FA;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -125,7 +133,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #E5E7EB;
 }
 
 .summary-row:last-child {
@@ -133,8 +141,8 @@ body {
 }
 
 .summary-value {
-    color: #10b981;
-    font-weight: 500;
+    color: #10B981;
+    font-weight: 600;
 }
 
 .observations {
@@ -142,24 +150,26 @@ body {
 }
 
 .observations label {
-    color: #1e3a8a;
-    font-weight: 500;
+    color: #3483FA;
+    font-weight: 600;
     display: block;
     margin-bottom: 8px;
 }
 
 .observations textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
+    padding: 12px;
+    border: 1px solid #D1D5DB;
     border-radius: 6px;
     font-size: 14px;
     resize: vertical;
-    background: #f9fafb;
+    background: #F9FAFB;
     color: #374151;
+    transition: all 0.3s;
 }
 
 .observations textarea:focus {
-    border-color: #3b82f6;
+    border-color: #3483FA;
     outline: none;
+    box-shadow: 0 0 5px rgba(52, 131, 250, 0.3);
 }

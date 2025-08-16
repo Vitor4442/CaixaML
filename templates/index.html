@@ -17,9 +17,13 @@
             <input type="date" id="endDate" class="date-input">
             <select class="type-select"><option>Entrada</option><option>Devolução</option><option>Garantia</option></select>
             <input type="text" placeholder="Pesquisar" class="search-input">
-            <button class="add-btn">Adicionar</button>
-            <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+            <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="pdf" accept=".pdf" style="display: none;">
+        <button type="button" class="add-btn" onclick="document.getElementById('fileInput').click();">Adicionar</button>
+        </form>
             <button class="export-btn">Exportar</button>
+            <button class="export-btn">Organizar notas</button>
+            <button class="export-btn">Organizar etiquetas</button>
         </div>
         <table class="table">
             <thead>
